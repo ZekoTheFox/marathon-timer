@@ -7,15 +7,16 @@ the timer can be extended by viewers doing certain things. (e.g. donating, subsc
 1. edit your current overlay
 2. add a custom widget via *Static / Custom* > *Custom widget*
 
-[placeholder / image of adding custom widget]
+![adding custom widget](https://github.com/ZekoTheFox/marathon-timer/assets/41507889/8f16a0fa-2b16-4283-b9f9-63e1b120d0e7)
 
 3. under the widget's settings, press *Open Editor*
 
-[placeholder / image of open editor button]
+![open editor button](https://github.com/ZekoTheFox/marathon-timer/assets/41507889/ea0a00b3-7ae5-43c4-a032-58c2b1a68ff3)
 
 4. replace the text with the corresponding content from this repo's files, then press **Done**
 
-[placeholder / image of editor modal]
+![editor modal](https://github.com/ZekoTheFox/marathon-timer/assets/41507889/dcc80dc4-dc3b-442c-8e93-059e52bf2684)
+
 > **HTML** should contain `widget.html`'s content, **CSS** is `widget.css`, **JS** is `widget.js`, and **Fields** is `widget.json`. ***the "DATA" tab is not used, ignore it***
 
 5. the settings should now display the various groups for controlling and customizing the timer.
