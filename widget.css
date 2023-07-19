@@ -1,0 +1,69 @@
+body {
+  font-family: var(--timer-font-family);
+}
+
+.timer {
+  padding: 1rem 0;
+  color: var(--countdown-color);
+  -webkit-text-stroke: var(--countdown-stroke-width)
+    var(--countdown-stroke-color);
+}
+
+.timer__countdown {
+  text-align: var(--countdown-text-alignment);
+  font-size: var(--countdown-font-size);
+  font-weight: var(--countdown-font-weight);
+}
+
+.timer__endTime {
+  font-size: var(--timer-endtime-font-size);
+  text-align: var(--countdown-text-alignment);
+}
+
+.timer__endTime[data-visible="false"] {
+  display: none;
+}
+
+.information {
+  font-family: var(--timer-font-family);
+}
+
+.log {
+  text-align: var(--log-text-alignment);
+  font-family: var(--timer-font-family);
+  font-size: var(--log-font-size);
+}
+
+.log[data-visible="false"] {
+  display: none;
+}
+
+.log__events {
+  display: flex;
+  flex-direction: column;
+}
+
+.log__events > * + * {
+  padding-top: 0.25rem;
+}
+
+.log__events > li > *+*.spaced::before {
+  content: " ";
+}
+
+.log__events > li[data-event="log"] {
+  color: var(--log-color-text);
+  display: block;
+}
+
+.log__events > li[data-event="internal"] {
+  color: var(--log-color-accent);
+}
+
+.log__value {
+  color: var(--log-color-accent);
+}
+
+.log__time {
+  color: var(--log-color-time);
+}

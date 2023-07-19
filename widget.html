@@ -1,0 +1,50 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>marathon-timer streamelements widget</title>
+<!-- pre-render content -->
+<link
+  rel="stylesheet"
+  href="https://fonts.bunny.net/css2?family={{fontFamily}}:wght@400;{{countdownFontWeight}}&display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/ola@1.2.1/ola.min.js"
+  integrity="sha256-R2kwYdd1Edb1JCbANaKcDJh/yV0jUMwZbPbcACD5cbM="
+  crossorigin="anonymous"
+></script>
+<style>
+  :root {
+    --timer-font-family: {{fontFamily}}, sans-serif;
+    --timer-endtime-font-size: {{timerEndTimeFontSize}}px;
+    --countdown-text-alignment: {{countdownAlignment}};
+    --countdown-color: {{countdownColor}};
+    --countdown-font-size: {{countdownFontSize}}px;
+    --countdown-font-weight: {{countdownFontWeight}};
+    --countdown-stroke-color: {{countdownStrokeColor}};
+    --countdown-stroke-width: {{countdownStrokeWidth}}px;
+    --log-color-accent: {{eventlogAccentColor}};
+    --log-color-text: {{eventlogTextColor}};
+    --log-color-time: {{eventlogTimeColor}};
+    --log-text-alignment: {{eventlogAlignment}};
+    --log-font-size: {{eventlogFontSize}}px;
+  }
+</style>
+<body>
+  <section id="timer" class="timer">
+    <div id="timerCountdown" class="timer__countdown">0:00:00</div>
+    <div id="timerEndTime" class="timer__endTime">...</div>
+  </section>
+  <section class="information">
+    <div id="eventLog" class="log">
+      <ul id="eventLogList" class="log__events">
+        <li data-event="internal">
+          <span>[ start of log ]</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div id="logs" hidden></div>
+</body>

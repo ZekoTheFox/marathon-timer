@@ -1,0 +1,299 @@
+{
+  "buttonStart": {
+    "type": "button",
+    "label": "Start/Resume Timer",
+    "group": "Controls"
+  },
+  "buttonPause": {
+    "type": "button",
+    "label": "Pause Timer",
+    "group": "Controls"
+  },
+  "buttonAdd": {
+    "type": "button",
+    "label": "Add 3 Minutes",
+    "group": "Controls"
+  },
+  "buttonEnd": {
+    "type": "button",
+    "label": "Reset/End Timer",
+    "group": "Controls"
+  },
+  "fontFamily": {
+    "type": "googleFont",
+    "label": "Font Family",
+    "value": "Roboto",
+    "group": "Theming"
+  },
+  "countdownFontSize": {
+    "type": "number",
+    "label": "Countdown Font Size",
+    "value": 56,
+    "step": 1,
+    "min": 4,
+    "group": "Theming"
+  },
+  "countdownFontWeight": {
+    "label": "Countdown Font Weight",
+    "type": "dropdown",
+    "value": "400",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "600": "Semi-bold (600)",
+      "700": "Bold (700)",
+      "800": "Extra Bold (800)",
+      "900": "Black (900)"
+    },
+    "group": "Theming"
+  },
+  "countdownAlignment": {
+    "type": "dropdown",
+    "label": "Countdown Text Alignment",
+    "value": "center",
+    "options": {
+      "left": "Left",
+      "center": "Center",
+      "right": "Right"
+    },
+    "group": "Theming"
+  },
+  "countdownStrokeColor": {
+    "type": "colorpicker",
+    "label": "Stroke Color",
+    "value": "#222",
+    "group": "Theming"
+  },
+  "countdownStrokeWidth": {
+    "type": "slider",
+    "label": "Stroke size (px)",
+    "value": 0,
+    "step": 1,
+    "max": 30,
+    "min": 0,
+    "group": "Theming"
+  },
+  "countdownColor": {
+    "type": "colorpicker",
+    "label": "Text Color",
+    "value": "#f2f2f2",
+    "group": "Theming"
+  },
+  "eventlogAccentColor": {
+    "type": "colorpicker",
+    "label": "Event Log Accent Color",
+    "value": "#8fb3ff",
+    "group": "Theming"
+  },
+  "eventlogTextColor": {
+    "type": "colorpicker",
+    "label": "Event Log Text Color",
+    "value": "#f2f2f2",
+    "group": "Theming"
+  },
+  "eventlogTimeColor": {
+    "type": "colorpicker",
+    "label": "Event Log Time Color",
+    "value": "#afafaf",
+    "group": "Theming"
+  },
+  "eventlogFontSize": {
+    "type": "number",
+    "label": "Event Log Font Size",
+    "value": 14,
+    "step": 1,
+    "min": 2,
+    "group": "Theming"
+  },
+  "timerDataSource": {
+    "type": "dropdown",
+    "label": "Event Data Source",
+    "value": "twitch",
+    "options": {
+      "twitch": "Twitch",
+      "youtube": "YouTube"
+    },
+    "group": "Action Value"
+  },
+  "timerFollowerWorth": {
+    "type": "number",
+    "label": "Follower (seconds)",
+    "value": 45,
+    "step": 1,
+    "min": 0,
+    "group": "Action Value"
+  },
+  "timerPaidMembershipWorth": {
+    "type": "number",
+    "label": "Paid Subscription (seconds)",
+    "value": 300,
+    "step": 1,
+    "min": 5,
+    "group": "Action Value"
+  },
+  "timerGiftedPaidMembershipWorth": {
+    "type": "number",
+    "label": "Gifted Subscription (seconds per sub)",
+    "value": 180,
+    "step": 1,
+    "min": 1,
+    "group": "Action Value"
+  },
+  "timerChatTipWorth": {
+    "type": "number",
+    "label": "Platform Tip (seconds per unit/cent)",
+    "value": 1.0,
+    "step": 0.05,
+    "min": 0.2,
+    "group": "Action Value"
+  },
+  "timerTwitchViewerWorth": {
+    "type": "number",
+    "label": "Twitch Raid/Host (seconds per viewer)",
+    "value": 12,
+    "step": 0.5,
+    "min": 1,
+    "group": "Action Value"
+  },
+  "timerSETipWorth": {
+    "type": "number",
+    "label": "SE Tip (seconds per dollar)",
+    "value": 30,
+    "step": 0.01,
+    "min": 1,
+    "group": "Action Value"
+  },
+  "timerInitial": {
+    "type": "number",
+    "label": "Initial timer length (in minutes)",
+    "value": 90,
+    "step": 1,
+    "min": 1,
+    "group": "Timer"
+  },
+  "timerMaximum": {
+    "type": "number",
+    "label": "Maximum timer length (in minutes)",
+    "value": 720,
+    "step": 1,
+    "min": 1,
+    "group": "Timer"
+  },
+  "timerEndTimeShown": {
+    "type": "checkbox",
+    "label": "Show End time",
+    "value": true,
+    "group": "Timer"
+  },
+  "timerEndTimeFontSize": {
+    "type": "number",
+    "label": "End Time Font Size",
+    "value": 24,
+    "step": 1,
+    "min": 2,
+    "group": "Theming"
+  },
+  "eventlogShown": {
+    "type": "checkbox",
+    "label": "Enable event logs",
+    "value": true,
+    "group": "Event Log"
+  },
+  "eventlogAlignment": {
+    "type": "dropdown",
+    "label": "Event Log Text Alignment",
+    "value": "center",
+    "options": {
+      "left": "Left",
+      "center": "Center",
+      "right": "Right"
+    },
+    "group": "Theming"
+  },
+  "displaySecondsPlusSign": {
+    "type": "checkbox",
+    "label": "Prefix plus (+) sign on log",
+    "value": true,
+    "group": "Text Formatting"
+  },
+  "displaySecondsSuffix": {
+    "type": "dropdown",
+    "label": "Seconds suffix on log",
+    "value": "lowercase",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase ('s')",
+      "uppercase": "UPPERCASE ('S')"
+    },
+    "group": "Text Formatting"
+  },
+  "displaySecondsContainer": {
+    "type": "dropdown",
+    "label": "Seconds container",
+    "value": "regular",
+    "options": {
+      "none": "None",
+      "regular": "Parenthesis (50s)",
+      "square": "Square Brackets [45S]",
+      "braces": "Curly Braces {30}",
+      "angle": "Angle Brackets <+15s>"
+    },
+    "group": "Text Formatting"
+  },
+  "textTwitchFollower": {
+    "type": "text",
+    "label": "Twitch Follower",
+    "value": "%user has followed! %time",
+    "group": "Text Formatting"
+  },
+  "textTwitchSubscriber": {
+    "type": "text",
+    "label": "Twitch Subscriber",
+    "value": "%user subscribed for %unit month(s)! %time",
+    "group": "Text Formatting"
+  },
+  "textTwitchCheer": {
+    "type": "text",
+    "label": "Twitch Cheer",
+    "value": "%user cheered %unit bits! %time",
+    "group": "Text Formatting"
+  },
+  "textTwitchHost": {
+    "type": "text",
+    "label": "Twitch Host",
+    "value": "%user has hosted with %unit viewers! %time",
+    "group": "Text Formatting"
+  },
+  "textTwitchRaid": {
+    "type": "text",
+    "label": "Twitch Raid",
+    "value": "%user raided with %unit viewers! %time",
+    "group": "Text Formatting"
+  },
+  "textYoutubeSubscriber": {
+    "type": "text",
+    "label": "Youtube Subscriber",
+    "value": "%user has subscribed! %time",
+    "group": "Text Formatting"
+  },
+  "textYoutubeSponsor": {
+    "type": "text",
+    "label": "Youtube Membership",
+    "value": "%user joined the channel for %unit month(s)! %time",
+    "group": "Text Formatting"
+  },
+  "textYoutubeSuperchat": {
+    "type": "text",
+    "label": "Youtube Superchat",
+    "value": "%user superchat'd $%unit dollars! %time",
+    "group": "Text Formatting"
+  },
+  "textGenericTip": {
+    "type": "text",
+    "label": "Generic Tip",
+    "value": "%user tipped $%unit! %time",
+    "group": "Text Formatting"
+  }
+}
