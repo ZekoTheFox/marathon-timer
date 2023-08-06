@@ -2,6 +2,36 @@
 it puts a timer overlay on your stream, which counts down.
 the timer can be extended by viewers doing certain things. (e.g. donating, subscribing, etc.)
 
+## features
+
+- twitch and youtube stream event support (also streamelements tips)
+- overlay widget controls
+- support for...
+  - twitch...
+    - *follows, bits, hype chats<sup>1</sup>, subscriptions, gifted subscriptions, and prime subscriptions*
+  - youtube...
+    - *subscribes, superchats<sup>1</sup>, channel memberships, and gifted memberships*
+  - streamelements tips<sup>1</sup>
+- change amount of time certain events add (in seconds)
+  - twitch followers / youtube subscribers
+  - paid chat events (hype chats / superchats)
+  - channel tiers (twitch subscription + prime / youtube channel member)
+  - gifted subscriptions
+  - bits, hosts, and raids<sup>2</sup>
+  - generic tips (streamelements)
+- show end time (relative to streamer's timezone)
+- event log (shows events as they come in)
+  - can show amount and seconds added
+- color & font support
+  - countdown and end time
+  - event log (accent, text, and time addition)
+- customizable text (for event log formatting)
+
+<sub>
+  1 = it isn't obvious if these events differ from tips or the platform's respective feature, so these may display incorrectly when received.<br>
+  2 = only available on twitch; bits have a dedicated value, and hosts/raids are multiplied by incoming viewers with a (single dedicated) value as well.
+</sub>
+
 ## installation
 
 1. edit your current overlay
