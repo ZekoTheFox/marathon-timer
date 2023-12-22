@@ -319,7 +319,7 @@ function log(format, data) {
     chars.end;
 
   const userText = create("span", data.event.name, ["log__value", "spaced"]);
-  const amountText = create("span", roundAmount(data.event.amount), ["log__value"]);
+  const amountText = create("span", data.event.amount, ["log__value"]);
   const additionText = create("span", formattedTime, ["log__time", "spaced"]);
 
   const nodes = [];
