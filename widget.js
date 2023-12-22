@@ -83,6 +83,10 @@ function _l(text) {
   ++__internal_log_index;
 }
 
+function roundAmount(value) {
+  return Math.floor(value * 10) / 10
+}
+
 function timerPause() {
   state.paused = true;
   state.pausedAt = Date.now();
@@ -310,12 +314,12 @@ function log(format, data) {
   const formattedTime =
     chars.start +
     (options.displaySecondsPlusSign ? "+" : "") +
-    (data.event.amount * worth(data)).toString() + // the actual time in seconds
+    roundAmount(data.event.amount * worth(data)).toString() + // the actual time in seconds
     (options.displaySecondsSuffix === "uppercase" ? "S" : suffix) +
     chars.end;
 
   const userText = create("span", data.event.name, ["log__value", "spaced"]);
-  const amountText = create("span", data.event.amount, ["log__value"]);
+  const amountText = create("span", roundAmount(data.event.amount), ["log__value"]);
   const additionText = create("span", formattedTime, ["log__time", "spaced"]);
 
   const nodes = [];
@@ -544,7 +548,7 @@ window.addEventListener("onWidgetLoad", function initializeState() {
 
   if (!lastState) {
     SE_API.store.set("mtimerstate", {
-      targetTime: Date.now() + 3600000, // lol
+      targetTime: Date.now() + 3_600_000, // lol
       paused: true,
       pausedAt: -1,
     });
